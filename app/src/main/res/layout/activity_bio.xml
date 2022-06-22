@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wavve"
+    tools:context=".bio">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:text="Masukkan Biografi"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:textColor="@color/purple_700"
+            android:gravity="center"
+            android:layout_marginBottom="50dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundMode="outline">
+
+            <EditText
+                android:id="@+id/namaband"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#DAA084CF"
+                android:hint="Nama Band"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundMode="outline">
+
+            <EditText
+                android:id="@+id/genr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#DAA084CF"
+                android:hint="Genre"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundMode="outline">
+
+            <EditText
+                android:id="@+id/terb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#DAA084CF"
+                android:hint="Terbentuk"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundMode="outline">
+
+            <EditText
+                android:id="@+id/biog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#DAA084CF"
+                android:hint="Biografi"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="SAVE" />
+
+    </LinearLayout>
+
+</ScrollView>
